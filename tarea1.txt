@@ -1,0 +1,15 @@
+maylinespinosa@MacBook-Air-de-Maylin ~ % cd /Users/maylinespinosa/Documents/"Sistemas Operativos"
+maylinespinosa@MacBook-Air-de-Maylin Sistemas Operativos % script tarea1.txt
+Script started, output file is tarea1.txt
+maylinespinosa@MacBook-Air-de-Maylin Sistemas Operativos % mkdir "Command Test Folder"
+maylinespinosa@MacBook-Air-de-Maylin Sistemas Operativos % mkdir "Command Test Folder"
+mkdir: Command Test Folder: File exists
+maylinespinosa@MacBook-Air-de-Maylin Sistemas Operativos % mv "Command Test Folder" /Users/maylinespinosa/Desktop 
+maylinespinosa@MacBook-Air-de-Maylin Sistemas Operativos % ls /Users/maylinespinosa/Desktop
+Command Test Folder
+maylinespinosa@MacBook-Air-de-Maylin Sistemas Operativos % rmdir /Users/maylinespinosa/Desktop/"Command Test Folder"
+maylinespinosa@MacBook-Air-de-Maylin Sistemas Operativos % ls /Users/maylinespinosa/Desktop
+maylinespinosa@MacBook-Air-de-Maylin Sistemas Operativos % cd
+
+
+
