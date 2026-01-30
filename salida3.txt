@@ -1,0 +1,63 @@
+Last login: Fri Jan 30 01:37:28 on ttys003
+maylinespinosa@MacBook-Air-de-Maylin ~ % cat script3.sh
+#!/bin/bash
+
+
+read -p "Ingresa el tiempo en segundos para apagar la computadora: " TIEMPO
+
+3
+MINUTOS=$((TIEMPO / 60))
+
+
+if [ "$MINUTOS" -lt 1 ]; then
+  MINUTOS=1
+fi
+
+
+sudo shutdown -h +$MINUTOS
+
+
+echo "La computadora se apagará en aproximadamente $TIEMPO segundos..."
+
+
+sleep 10
+
+sudo shutdown -c
+
+
+echo "El timer de apagado ha sido cancelado."
+maylinespinosa@MacBook-Air-de-Maylin ~ % vim script3.sh
+maylinespinosa@MacBook-Air-de-Maylin ~ % ./script3.sh
+Ingresa el tiempo en segundos para apagar la computadora: 30 
+./script3.sh: line 6: 3: command not found
+Password:
+Shutdown at Fri Jan 30 01:56:28 2026.
+shutdown: [pid 1981]
+                                                                               
+*** System shutdown message from maylinespinosa@MacBook-Air-de-Maylin.local **
+*                                                                             
+
+System going down in 1 minute                                                  
+
+                                                                               
+shutdown: illegal option -- c
+usage: shutdown [-] [-h | -r | -s | -k] [-o [-n]] [-q] time [warning-message ...]
+La computadora se apagará en aproximadamente 30 segundos...
+shutdown: illegal option -- c
+usage: shutdown [-] [-h | -r | -s | -k] [-o [-n]] [-q] time [warning-message ...]
+El timer de apagado ha sido cancelado.
+maylinespinosa@MacBook-Air-de-Maylin ~ %                                                                                
+*** System shutdown message from maylinespinosa@MacBook-Air-de-Maylin.local **
+*                                                                             
+
+System going down in 30 seconds                                                
+
+                                                                               
+
+  [Restaurado: 30 ene 2026, 1:58:35 a.m.]
+Last login: Fri Jan 30 01:58:34 on ttys003
+maylinespinosa@MacBook-Air-de-Maylin ~ % 
+  [Restaurado: 30 ene 2026, 2:08:53 a.m.]
+Last login: Fri Jan 30 02:08:53 on ttys003
+Restored session: viernes, 30 de enero de 2026, 02:07:50 CST
+maylinespinosa@MacBook-Air-de-Maylin ~ % 
